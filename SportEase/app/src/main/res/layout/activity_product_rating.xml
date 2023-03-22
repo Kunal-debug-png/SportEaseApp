@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product.ProductRating">
+
+    <TextView
+        android:id="@+id/txtrate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please give rating*"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/gen_black"/>
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        />
+    <TextView
+        android:id="@+id/txtrate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review Title*"
+        android:textSize="20dp"
+        android:textColor="@color/gen_black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ratingbar"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/edtrate1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtrate2"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:layout_marginLeft="20dp"
+        android:hint="Max 50 Characters"
+        android:paddingLeft="20dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtrate3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment*"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/edtrate1"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/gen_black"/>
+
+    <EditText
+        android:id="@+id/edtrate2"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/txtrate3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Maximum 3000 Characters"
+        android:paddingLeft="20dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtrate4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Used Since*"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/edtrate2"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/gen_black"/>
+
+    <Spinner
+        android:id="@+id/poc1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtrate4"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/txtrate5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Will you recommend this product*"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/poc1"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/gen_black"/>
+    <RadioGroup
+        android:id = "@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtrate5"
+        android:layout_marginTop="25dp">
+
+    <RadioButton
+        android:id="@+id/yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:checked="true"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        />
+    <RadioButton
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:checked="true"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        />
+        <Button
+            android:id="@+id/ratebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/gen_white"
+            android:background="@color/colorPrimary"
+            android:text="Submit"/>
+</RadioGroup>
+</RelativeLayout>

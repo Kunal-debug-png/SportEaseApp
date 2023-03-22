@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="20dp"
+              android:gravity="center"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="657dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:text="Please contact us for any questions or comments (including all inquiries unrelated to copyright infringement) regarding this Application
+at \ncare.india@sportease.com or phone number at \n+91 9876324590
+\nGrievance officer:\n
+In accordance with Information Technology Act 2000 and rules made there under, the name and contact details of the Grievance Officer
+are provided below:\n
+SportEase  India Pvt Ltd.
+Survey No. 78/10 A20-
+Chikkajala Village, Bellary Road,
+(PO Box No. 1,Bettahalsoor Post Office)
+\nMumbai, India."
+        android:textColor="@color/gen_black"
+        android:justificationMode="inter_word"
+        android:textSize="20sp" />
+</LinearLayout>
